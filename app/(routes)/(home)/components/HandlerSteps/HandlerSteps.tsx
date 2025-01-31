@@ -1,12 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { HandlerStepsTypes } from "./HandlerSteps.types";
 import {
   AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
-  AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
@@ -15,6 +13,7 @@ import { useStepsConfig } from "@/hooks/useStepConfig";
 import { ArrowLeft } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { StepOne } from "../StepOne";
+import { StepTwo } from "../StepTwo";
 
 export const HandlerSteps = (props: HandlerStepsTypes) => {
   const { onReload } = props;
@@ -68,7 +67,7 @@ export const HandlerSteps = (props: HandlerStepsTypes) => {
           >
             <div>
               {step === 1 && <StepOne />}
-              {step === 2 && <div></div>}
+              {step === 2 && <StepTwo />}
               {step === 3 && <div></div>}
               {step === 4 && <div></div>}
               {step === 5 && <div></div>}

@@ -45,7 +45,7 @@ export default function HomePage() {
       </StepConfigUserProvider>
     );
   }
-
+  console.log({ infoUser });
   return (
     <div className="p-4">
       <div className="grid grid-cols-1 md:grid-cols-[70%_auto] gap-4">
