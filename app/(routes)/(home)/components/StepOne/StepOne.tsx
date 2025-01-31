@@ -1,8 +1,8 @@
 import React from "react";
 import { dataCreator } from "./StepOne.data";
-import { Button } from "@/components/ui/button";
 import { useStepsConfig } from "@/hooks/useStepConfig";
 import { cn } from "@/lib/utils";
+import { NextStepBtn } from "../NextStepBtn";
 
 export const StepOne = () => {
   const { setInfoUser, nextStep, infoUser } =
@@ -43,12 +43,7 @@ export const StepOne = () => {
       </div>
 
       <div className="mt-6">
-        <Button
-          onClick={() => nextStep()}
-          className="w-full bg-purple-600"
-        >
-          Continue
-        </Button>
+        <NextStepBtn />
       </div>
     </div>
   );
