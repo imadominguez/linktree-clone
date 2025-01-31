@@ -13,16 +13,16 @@ export const LinkProfile = () => {
   };
   return (
     <div className="bg-indigo-100 rounded-3xl">
-      <div className="flex flex-col justify-center text-center p-4 items-center gap-2 md:flex-row md:justify-between md:text-left">
+      <div className="flex flex-col justify-center text-center p-4 items-center gap-2 lg:flex-row lg:justify-between lg:text-left">
         <span className="text-sm">
-          <span>🔥 Your TreeClone is live:</span>
+          <span>🔥 Your TreeClone is live: </span>
           {window.location.origin}/@tarredevTest
         </span>
 
         <Button
           onClick={copyLink}
           variant={"outline"}
-          className="rounded-full px-4 font-semibold bg-white text-xs md:text-[16px]"
+          className="rounded-full px-4 font-semibold bg-white text-xs md:text-[16px] max-w-xs w-full"
         >
           {isCopyLink ? "Copied" : "Copy your TarreTree URL"}
         </Button>
